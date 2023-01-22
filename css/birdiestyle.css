@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: #f2edda;
+    overflow: hidden;
+}
+
+/* header */
+.header {
+    font-family: Monterrat, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1;
+}
+
+.header a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 2rem;
+}
+
+svg{
+    height: 773px;
+    width: 888px;
+}
+
+#Body{
+    animation: birdbody 1s ease-in-out infinite alternate;
+}
+
+#Top-Note{
+    animation: fadeinout 4s linear forwards infinite, wiggle 3s infinite;
+}
+
+#Note2{
+    animation: fadeinout 3s linear forwards infinite, wiggle 4.5s infinite;
+}
+
+#Note3{
+    animation: fadeinout 3.5s linear forwards infinite, wiggle 3.5s infinite;
+}
+
+#Note4{
+    animation: fadeinout 4s linear forwards infinite, wiggle 3.8s infinite;
+}
+
+#Note5{
+    animation: fadeinout 3s linear forwards infinite, wiggle 4s infinite;
+}
+
+#Bottom-Note{
+    animation: fadeinout 2.5s linear forwards infinite, wiggle 5s infinite;
+}
+
+@keyframes birdbody{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(10deg);
+    }
+
+}
+
+@keyframes fadeinout{
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    svg{
+        height: 600px;
+        width: 350px;
+    }
+}
