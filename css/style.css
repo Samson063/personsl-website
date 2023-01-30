@@ -53,8 +53,16 @@ span:hover {
   transition: all 0.5s;
 }
 
-span.name {
+span.anthony {
   color: #4115b1;
+  font-size: 3rem;
+  font-family: Comic Sans MS;
+}
+
+span.samson {
+  color: #4115b1;
+  font-size: 3rem;
+  font-family: Comic Sans MS;
 }
 
 span.m-left {
@@ -71,7 +79,7 @@ span.m-left {
   padding: 12px 25px;
   background-color: none;
   border: 3px solid #6a43ca;
-  color: #7855d2;
+  color: #45229d;
   font-size: 0.8rem;
   letter-spacing: 2px;
   position: relative;
@@ -79,10 +87,12 @@ span.m-left {
   overflow: hidden;
   transition: 0.5s;
   display: inline-block;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .text a:hover {
-  color: rgb(187, 185, 185);
+  color: rgb(235, 233, 233);
 }
 
 .text a::before {
@@ -132,6 +142,7 @@ span.m-left {
   text-decoration: none;
   color: #111111;
   font-size: 2rem;
+  font-family: Comic Sans MS;
 }
 
 .menu-items {
@@ -145,6 +156,7 @@ span.m-left {
   padding: 0.5em 1em;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
   border-radius: 20px;
+  font-family: Comic Sans MS;
 }
 
 .menu-items li a:hover {
@@ -306,14 +318,21 @@ form textarea {
   right: 50%;
   transform: translateX(-50%);
   background-color: rgb(209, 208, 208);
+  border-radius: 25px;
 }
 
 form input:last-child {
   width: 150px;
   height: 50px;
-  background-color: #6135c8;
+  background-color: #3e11a7;
   border: none;
   cursor: pointer;
+}
+
+input.myinput {
+  border-radius: 10;
+  color: rgb(8, 8, 8);
+  font-weight: 800;
 }
 
 /*project cards*/
