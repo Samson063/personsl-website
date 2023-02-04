@@ -25,17 +25,35 @@ body {
   justify-content: space-between;
   height: calc(100vh - 81.6px);
   margin: auto;
-  max-width: 72em;
+  max-width: 52em;
   width: 100%;
   padding: 10px;
 }
 
-.text {
-  margin-top: 150px;
+.hi {
+  margin-left: 350px;
+  margin-top: -20px;
+  /* color: #4115b1; */
 }
 
-.text-side {
-  margin-top: 100px;
+.web {
+  margin-left: 30px;
+}
+
+.skills {
+  margin-left: 150px;
+}
+
+.email-resume {
+  margin-left: 100px;
+}
+
+.socials {
+  margin-left: 245px;
+}
+
+.text {
+  margin-top: 150px;
 }
 
 .text h1 {
@@ -55,14 +73,16 @@ span:hover {
 
 span.anthony {
   color: #4115b1;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: Comic Sans MS;
+  text-transform: uppercase;
 }
 
 span.samson {
   color: #4115b1;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: Comic Sans MS;
+  text-transform: uppercase;
 }
 
 span.m-left {
@@ -336,8 +356,6 @@ input.myinput {
 }
 
 /*project cards*/
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 .cards {
   width: 100%;
@@ -448,55 +466,26 @@ input.myinput {
   opacity: 1;
 }
 
-/* Mouse Scroll Indicator */
-.mouse-scroll {
-  display: flex;
-  line-height: 18px;
-  font-size: 13px;
-  font-weight: normal;
-  color: #7f828d;
-  color: #000;
-  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  letter-spacing: 2px;
-  text-decoration: none;
-  overflow: hidden;
-}
-
-.mouse {
-  position: relative;
-  display: block;
-  width: 46px;
-  height: 73px;
-  margin: 0 auto 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 3px solid #000;
-  border-radius: 23px;
-}
-.mouse-movement {
-  position: absolute;
-  display: block;
-  top: 29%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  margin: -4px 0 0 -4px;
-  background: #000;
-  border-radius: 50%;
-  -webkit-animation: scroll-ani 4s linear infinite;
-  -moz-animation: scroll-ani 4s linear infinite;
-  animation: scroll-ani 4s linear infinite;
-}
-
 /* media query for tablet devices */
 @media (max-width: 1086px) {
   .main-info-section {
     height: calc(65vh - 81.6px);
     margin: auto;
-    max-width: 72em;
+    max-width: 52em;
     width: 100%;
     padding: 10px;
+  }
+
+  .i-am {
+    margin-left: 50px;
+  }
+
+  span.anthony {
+    font-size: 3.5rem;
+  }
+
+  span.samson {
+    font-size: 3.5rem;
   }
 
   .text-side {
@@ -541,6 +530,7 @@ input.myinput {
     outline: none;
     font-size: 14px;
     position: relative;
+    border-radius: 8px;
   }
 
   form input:last-child {
@@ -623,5 +613,43 @@ input.myinput {
 
   .text h1 {
     font-size: 2.5rem;
+  }
+
+  .hi {
+    margin-left: 0px;
+    margin-top: 100px;
+    /* color: #4115b1; */
+  }
+
+  .web {
+    margin-left: 0px;
+  }
+
+  .skills {
+    margin-left: 0px;
+  }
+
+  .email-resume {
+    margin-left: 0px;
+  }
+
+  .socials {
+    margin-left: 0px;
+  }
+
+  .text {
+    margin-top: 0px;
+  }
+
+  span.anthony {
+    font-size: 2rem;
+  }
+
+  span.samson {
+    font-size: 2rem;
+  }
+
+  .i-am {
+    margin-left: 0px;
   }
 }
